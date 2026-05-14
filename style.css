@@ -1,0 +1,279 @@
+:root {
+  --bg: #ffffff;
+  --card: #ffffff;
+  --border: #e9e9e9;
+  --text: #111111;
+  --muted: #6f6f6f;
+  --soft: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 40px 18px;
+  min-height: 100vh;
+}
+
+.wrap {
+  max-width: 980px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 34px;
+}
+
+.header h2 {
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -1.6px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+/* STATS */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 22px;
+  transition: 0.2s ease;
+}
+
+.stat-card:hover {
+  border-color: #111;
+  transform: translateY(-2px);
+}
+
+.stat-val {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-lbl {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* LEGEND */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.leg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 12px;
+  color: #444;
+}
+
+.leg-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 11px 18px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #555;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tab:hover {
+  border-color: #111;
+  color: #111;
+}
+
+.tab.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* DAY CARD */
+.day-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 24px;
+  margin-bottom: 18px;
+  transition: 0.2s ease;
+}
+
+.day-card:hover {
+  border-color: #111;
+  transform: translateY(-2px);
+}
+
+.day-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.day-num {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.day-date {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.exam-badge {
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* SESSION */
+.session {
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 18px;
+  margin-bottom: 14px;
+  background: var(--soft);
+}
+
+.session:last-child {
+  margin-bottom: 0;
+}
+
+.session-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  color: #666;
+}
+
+.subject-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.subject-row:last-child {
+  margin-bottom: 0;
+}
+
+.subj-badge {
+  min-width: 82px;
+  text-align: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  background: #111;
+  flex-shrink: 0;
+}
+
+.topic-text {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #222;
+}
+
+/* SUBJECT COLORS */
+.stats-badge {
+  background: #111;
+}
+.networks-badge {
+  background: #222;
+}
+.algo-badge {
+  background: #333;
+}
+.dbms-badge {
+  background: #444;
+}
+.os-badge {
+  background: #555;
+}
+.java-badge {
+  background: #666;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  body {
+    padding: 24px 14px;
+  }
+  .header h2 {
+    font-size: 30px;
+  }
+  .day-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .subject-row {
+    flex-direction: column;
+  }
+  .subj-badge {
+    width: fit-content;
+  }
+  .tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+  }
+  .tab {
+    white-space: nowrap;
+  }
+}
