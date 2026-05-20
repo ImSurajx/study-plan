@@ -685,6 +685,9 @@ const p3_exams = {
 // ==========================================
 // 2. CONFIGURATIONS
 // ==========================================
+// ==========================================
+// 2. CONFIGURATIONS
+// ==========================================
 const config = {
   p1: {
     header: `<h2 class="headline-lg">Phase 1: 21-Day Heavy Lifting</h2><p class="body-sm">May 21 → Jun 10 · Office 5h Protocol (1h Active Recall + 4h Deep Work)</p>`,
@@ -848,14 +851,22 @@ function renderAppShell() {
   updateSection("app-tabs", c.tabs);
 }
 
+// Replace the switchPhase function in app.js with this:
 function switchPhase(phase) {
   currentPhase = phase;
   currentFilter = "all";
 
+  // Update Desktop Buttons
   document
     .querySelectorAll(".toggle-btn")
     .forEach((btn) => btn.classList.remove("active"));
   document.getElementById(`btn-${phase}`).classList.add("active");
+
+  // Sync Mobile Select Menu
+  const mobileSelect = document.getElementById("mobile-phase-select");
+  if (mobileSelect) {
+    mobileSelect.value = phase;
+  }
 
   renderAppShell();
   renderSchedule();

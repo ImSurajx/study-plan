@@ -425,3 +425,38 @@ body {
     min-width: 45%;
   }
 }
+
+/* --- Mobile Select Menu --- */
+.mobile-select {
+  display: none; /* Hidden on desktop */
+  width: 100%;
+  padding: 12px;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--on-surface);
+  background-color: var(--surface-card);
+  border: 1px solid var(--outline);
+  border-radius: var(--rounded-sm);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 650px) {
+  .top-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .phase-toggle {
+    display: none; /* Hide button row on mobile */
+  }
+  .mobile-select {
+    display: block; /* Show dropdown on mobile */
+  }
+  .bulk-actions {
+    justify-content: space-between;
+  }
+  .bulk-btn {
+    flex: 1;
+    text-align: center;
+  }
+}
