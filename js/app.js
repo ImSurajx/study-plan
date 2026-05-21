@@ -93,16 +93,22 @@ async function bulkUpdateVisible(newStatus) {
   }
 }
 
-// ==========================================
-// 1. DATA ARRAYS (4+1 Spaced Repetition)
+/// ==========================================
+// 1. DATA ARRAYS (Streamlined Web Dev)
 // ==========================================
 const p1_days = [
   {
     day: 1,
-    date: "May 21",
+    date: "May 22",
     week: "w1",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Stats",
         badge: "bg-hard",
@@ -116,10 +122,16 @@ const p1_days = [
   },
   {
     day: 2,
-    date: "May 22",
+    date: "May 23",
     week: "w1",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Stats",
         badge: "bg-hard",
@@ -133,10 +145,16 @@ const p1_days = [
   },
   {
     day: 3,
-    date: "May 23",
+    date: "May 24",
     week: "w1",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Stats",
         badge: "bg-hard",
@@ -150,10 +168,16 @@ const p1_days = [
   },
   {
     day: 4,
-    date: "May 24",
+    date: "May 25",
     week: "w1",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Networks",
         badge: "bg-hard",
@@ -167,10 +191,16 @@ const p1_days = [
   },
   {
     day: 5,
-    date: "May 25",
+    date: "May 26",
     week: "w1",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Networks",
         badge: "bg-hard",
@@ -184,10 +214,16 @@ const p1_days = [
   },
   {
     day: 6,
-    date: "May 26",
+    date: "May 27",
     week: "w1",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Networks",
         badge: "bg-hard",
@@ -201,10 +237,16 @@ const p1_days = [
   },
   {
     day: 7,
-    date: "May 27",
+    date: "May 28",
     week: "w1",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Algos",
         badge: "bg-hardest",
@@ -218,10 +260,16 @@ const p1_days = [
   },
   {
     day: 8,
-    date: "May 28",
+    date: "May 29",
     week: "w2",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Algos",
         badge: "bg-hardest",
@@ -235,10 +283,16 @@ const p1_days = [
   },
   {
     day: 9,
-    date: "May 29",
+    date: "May 30",
     week: "w2",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Algos",
         badge: "bg-hardest",
@@ -252,10 +306,16 @@ const p1_days = [
   },
   {
     day: 10,
-    date: "May 30",
+    date: "May 31",
     week: "w2",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Mega Revision",
         badge: "bg-neutral",
@@ -269,10 +329,16 @@ const p1_days = [
   },
   {
     day: 11,
-    date: "May 31",
+    date: "Jun 1",
     week: "w2",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Numerical",
         badge: "bg-hardest",
@@ -286,10 +352,16 @@ const p1_days = [
   },
   {
     day: 12,
-    date: "Jun 1",
+    date: "Jun 2",
     week: "w2",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Numerical",
         badge: "bg-hardest",
@@ -303,10 +375,16 @@ const p1_days = [
   },
   {
     day: 13,
-    date: "Jun 2",
+    date: "Jun 3",
     week: "w2",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Numerical",
         badge: "bg-hardest",
@@ -320,10 +398,16 @@ const p1_days = [
   },
   {
     day: 14,
-    date: "Jun 3",
+    date: "Jun 4",
     week: "w2",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "OS",
         badge: "bg-med",
@@ -337,10 +421,16 @@ const p1_days = [
   },
   {
     day: 15,
-    date: "Jun 4",
+    date: "Jun 5",
     week: "w3",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "OS",
         badge: "bg-med",
@@ -354,10 +444,16 @@ const p1_days = [
   },
   {
     day: 16,
-    date: "Jun 5",
+    date: "Jun 6",
     week: "w3",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Net Prog",
         badge: "bg-hard",
@@ -371,10 +467,16 @@ const p1_days = [
   },
   {
     day: 17,
-    date: "Jun 6",
+    date: "Jun 7",
     week: "w3",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Net Prog",
         badge: "bg-hard",
@@ -388,10 +490,16 @@ const p1_days = [
   },
   {
     day: 18,
-    date: "Jun 7",
+    date: "Jun 8",
     week: "w3",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Java",
         badge: "bg-med",
@@ -405,10 +513,16 @@ const p1_days = [
   },
   {
     day: 19,
-    date: "Jun 8",
+    date: "Jun 9",
     week: "w3",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Java",
         badge: "bg-med",
@@ -422,32 +536,21 @@ const p1_days = [
   },
   {
     day: 20,
-    date: "Jun 9",
-    week: "w3",
-    libraryNull: true,
-    office: [
-      {
-        subj: "Mega Revision",
-        badge: "bg-neutral",
-        topics: [
-          "Active Recall (1h): Rapid fire PYQ formulas for Numerical & Net Prog.",
-          "Deep Work (4h): Full PYQ drill on Numerical (Gauss, Bisection).",
-          "Deep Work: Code drill for Java (Threads, I/O) & Net Prog (Sockets).",
-        ],
-      },
-    ],
-  },
-  {
-    day: 21,
     date: "Jun 10",
     week: "w3",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Stats",
         badge: "bg-hard",
         topics: [
-          "PRE-GAME REVISION: Drop everything else. Tomorrow is the Stats exam.",
+          "PRE-GAME REVISION: Tomorrow is the Stats exam.",
           "Run through the entire Stats PYQ formula sheet.",
           "Do 1 full mock test of ANOVA, Chi-Square, Regression, and Prob distributions.",
         ],
@@ -466,8 +569,14 @@ const p2_days = [
     day: 1,
     date: "Jun 14",
     week: "gaps",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "OS",
         badge: "bg-med",
@@ -483,8 +592,14 @@ const p2_days = [
     day: 2,
     date: "Jun 16",
     week: "gaps",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Net Prog",
         badge: "bg-hard",
@@ -500,8 +615,14 @@ const p2_days = [
     day: 3,
     date: "Jun 17",
     week: "gaps",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Net Prog",
         badge: "bg-hard",
@@ -517,8 +638,14 @@ const p2_days = [
     day: 4,
     date: "Jun 18",
     week: "gaps",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "DBMS",
         badge: "bg-med",
@@ -534,8 +661,14 @@ const p2_days = [
     day: 5,
     date: "Jun 19",
     week: "gaps",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "DBMS",
         badge: "bg-med",
@@ -551,8 +684,14 @@ const p2_days = [
     day: 6,
     date: "Jun 20",
     week: "gaps",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Web Prog",
         badge: "bg-easy",
@@ -568,8 +707,14 @@ const p2_days = [
     day: 7,
     date: "Jun 21",
     week: "gaps",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Web Prog",
         badge: "bg-easy",
@@ -585,8 +730,14 @@ const p2_days = [
     day: 8,
     date: "Jun 22",
     week: "gaps",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Java",
         badge: "bg-med",
@@ -602,8 +753,14 @@ const p2_days = [
     day: 9,
     date: "Jun 23",
     week: "gaps",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Java",
         badge: "bg-med",
@@ -627,8 +784,14 @@ const p3_days = [
     day: 1,
     date: "Jun 26",
     week: "all",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "Numerical",
         badge: "bg-hardest",
@@ -644,8 +807,14 @@ const p3_days = [
     day: 2,
     date: "Jun 28",
     week: "all",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "E-Com",
         tag: "must",
@@ -662,8 +831,14 @@ const p3_days = [
     day: 3,
     date: "Jun 29",
     week: "all",
-    libraryNull: true,
     office: [
+      {
+        subj: "Web Dev",
+        badge: "bg-med",
+        topics: ["Follow bootcamp schedule."],
+      },
+    ],
+    library: [
       {
         subj: "E-Com",
         tag: "high",
@@ -685,21 +860,18 @@ const p3_exams = {
 // ==========================================
 // 2. CONFIGURATIONS
 // ==========================================
-// ==========================================
-// 2. CONFIGURATIONS
-// ==========================================
 const config = {
   p1: {
-    header: `<h2 class="headline-lg">Phase 1: 21-Day Heavy Lifting</h2><p class="body-sm">May 21 → Jun 10 · Office 5h Protocol (1h Active Recall + 4h Deep Work)</p>`,
-    stats: `<div class="stat-card"><div class="stats-num">21</div><div class="label-caps stat-lbl">Study days</div></div><div class="stat-card"><div class="stats-num">6</div><div class="label-caps stat-lbl">Subjects</div></div><div class="stat-card"><div class="stats-num">5h</div><div class="label-caps stat-lbl">Daily study</div></div><div class="stat-card"><div class="stats-num">Jun 11</div><div class="label-caps stat-lbl">First exam</div></div>`,
-    legend: `<div class="leg"><div class="leg-dot bg-hardest"></div>Algos / Num (Hardest)</div><div class="leg"><div class="leg-dot bg-hard"></div>Stats / Networks (Hard)</div><div class="leg"><div class="leg-dot bg-med"></div>OS / Java (Medium)</div>`,
-    tabs: `<div class="tab active" onclick="setFilter('all', this)">All 21 days</div><div class="tab" onclick="setFilter('w1', this)">Block 1</div><div class="tab" onclick="setFilter('w2', this)">Block 2</div><div class="tab" onclick="setFilter('w3', this)">Block 3</div>`,
+    header: `<h2 class="headline-lg">Phase 1: 20-Day Heavy Lifting</h2><p class="body-sm">May 22 → Jun 10 · Office (Web Dev) · Library (College Exams)</p>`,
+    stats: `<div class="stat-card"><div class="stats-num">20</div><div class="label-caps stat-lbl">Study days</div></div><div class="stat-card"><div class="stats-num">6</div><div class="label-caps stat-lbl">Subjects</div></div><div class="stat-card"><div class="stats-num">4pm–10pm</div><div class="label-caps stat-lbl">Library Time</div></div><div class="stat-card"><div class="stats-num">Jun 11</div><div class="label-caps stat-lbl">First exam</div></div>`,
+    legend: `<div class="leg"><div class="leg-dot bg-hardest"></div>Algos / Num (Hardest)</div><div class="leg"><div class="leg-dot bg-hard"></div>Stats / Networks (Hard)</div><div class="leg"><div class="leg-dot bg-med"></div>OS / Java / Web Dev (Medium)</div>`,
+    tabs: `<div class="tab active" onclick="setFilter('all', this)">All 20 days</div><div class="tab" onclick="setFilter('w1', this)">Block 1</div><div class="tab" onclick="setFilter('w2', this)">Block 2</div><div class="tab" onclick="setFilter('w3', this)">Block 3</div>`,
     data: p1_days,
     exams: p1_exams,
   },
   p2: {
     header: `<h2 class="headline-lg">Phase 2: The Double Headers</h2><p class="body-sm">Jun 14 & Jun 16–23 · Prep for double exams on 24th/25th</p>`,
-    stats: `<div class="stat-card"><div class="stats-num">9</div><div class="label-caps stat-lbl">Study days</div></div><div class="stat-card"><div class="stats-num">5</div><div class="label-caps stat-lbl">Subjects</div></div><div class="stat-card"><div class="stats-num">5h</div><div class="label-caps stat-lbl">Daily study</div></div><div class="stat-card"><div class="stats-num">Jun 24</div><div class="label-caps stat-lbl">D-Day</div></div>`,
+    stats: `<div class="stat-card"><div class="stats-num">9</div><div class="label-caps stat-lbl">Study days</div></div><div class="stat-card"><div class="stats-num">5</div><div class="label-caps stat-lbl">Subjects</div></div><div class="stat-card"><div class="stats-num">4pm–10pm</div><div class="label-caps stat-lbl">Library Time</div></div><div class="stat-card"><div class="stats-num">Jun 24</div><div class="label-caps stat-lbl">D-Day</div></div>`,
     legend: `<div class="leg"><div class="leg-dot bg-hard"></div>Net Prog (Hard)</div><div class="leg"><div class="leg-dot bg-med"></div>DBMS / OS / Java (Medium)</div><div class="leg"><div class="leg-dot bg-easy"></div>Web Prog (Easy)</div>`,
     tabs: `<div class="tab active" onclick="setFilter('all', this)">All Gaps</div><div class="tab" onclick="setFilter('gaps', this)">Double Header Prep</div>`,
     data: p2_days,
@@ -809,10 +981,14 @@ function renderSchedule() {
       ? `<span class="exam-badge label-caps">${c.exams[d.date]}</span>`
       : "";
 
+    // FLIPPED LABELS & UPDATED TIMES
     let officeLabel = d.isExamDay
       ? "Office · 6am–2pm (Exam Day)"
-      : "Office · 6am–2pm (5 Hours: 1h AR + 4h DW)";
-    let libraryLabel = "Library · 4pm–11pm (Web Dev Bootcamp)";
+      : "Office · 6am–2pm (Web Dev Bootcamp)";
+
+    let libraryLabel = d.isExamDay
+      ? "Exam · 2pm–5pm"
+      : "Library · 4pm–10pm (College Prep: 1h Recall + 4h Deep Work)";
 
     let animationDelay = index * 0.05 + 0.1;
 
